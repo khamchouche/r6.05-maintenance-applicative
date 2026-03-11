@@ -12,9 +12,9 @@ public class SimpleClass {
      * @param b - second paramètre
      * @return
      */
-    public int someAdditionMethod(int a, int b) {
+    public int add(int a, int b) {
         return a + b ;
-    }
+    }//aditionne 2 entier
 
     public static boolean isNowBetween (LocalDate startingDate, LocalDate endingDate) {
         return ( LocalDate.now().isAfter(startingDate)
@@ -24,7 +24,7 @@ public class SimpleClass {
     }
 
     public static void main(String[] args) {
-        new SimpleClass().someAdditionMethod(1,2);
+        new SimpleClass().add(1,2);
 
         System.out.println("Hello world");
     }
