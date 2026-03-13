@@ -11,4 +11,9 @@ public class DateUtils {
                 &&
                 now.isBefore(endingDate);
     }
+
+    private static void isDateOutsider(LocalDate date, LocalDate startingDate, LocalDate
+            endingDate) {
+        return !DateUtils.isDateBetween(date, startingDate, endingDate);
+    }
 }
